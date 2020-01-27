@@ -1,0 +1,15 @@
+vue
+vuex
+router u vuex (store) obavezno import router from '@/router/index', da bi mogao da koristis  router.push("/UserPanel");
+axios   
+-------------------
+za cuvanje podataka prilikom refresh stranice, u store (vuex)
+
+import createPersistedState from 'vuex-persistedstate'; 
+ plugins: [createPersistedState()],
+ ----------------------
+u main.js ako imamo component sa apijem i unutra putanje do servera
+ import api from '@/api'
+
+Vue.prototype.$api = api
+--------------------
